@@ -1,0 +1,105 @@
+{
+	"variables": [],
+	"info": {
+		"name": "COUNTRIES",
+		"_postman_id": "b04fb730-2190-6063-9a9e-cddf311049bd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GETALL",
+			"request": {
+				"url": "http://localhost:8080/countries/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"_id\": \"5d769db7ffc25925b5acc3c9\",\n        \"country\": \"A\",\n        \"population\": 0,\n        \"continent\": \"África\",\n        \"lifeExpectancy\": 0,\n        \"purchasingPower\": 0\n        \n        \n        }"
+				},
+				"description": "http://localhost:8080/countries/"
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"url": "http://localhost:8080/countries/Angola",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"_id\": \"5d769db7ffc25925b5acc3c9\",\n        \"country\": \"A\",\n        \"population\": 0,\n        \"continent\": \"África\",\n        \"lifeExpectancy\": 0,\n        \"purchasingPower\": 0\n        \n        \n        }"
+				},
+				"description": "http://localhost:8080/countries/name"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"url": "http://localhost:8080/countries/Angola",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"_id\": \"5d769db7ffc25925b5acc3c9\",\n        \"country\": \"Angola\",\n        \"population\": 130,\n        \"continent\": \"África\",\n        \"lifeExpectancy\": 6600,\n        \"purchasingPower\": 0\n}"
+				},
+				"description": "http://localhost:8080/countries/name"
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"url": "http://localhost:8080/countries/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"_id\": \"5d769db7ffc25925b5acc3c100\",\n        \"country\": \"NuevoPais\",\n        \"population\": 130,\n        \"continent\": \"África\",\n        \"lifeExpectancy\": 6600,\n        \"purchasingPower\": 0\n}"
+				},
+				"description": "http://localhost:8080/countries/name"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"url": "http://localhost:8080/countries/Angola",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "http://localhost:8080/countries/"
+			},
+			"response": []
+		}
+	]
+}
